@@ -1,7 +1,12 @@
 import React from "react";
+import { AppProvider } from "@shopify/polaris";
+
+import Routes from "./routes";
 
 const App = () => (
-  <div>Paytm Insider APP</div>
+  <AppProvider>
+    <Routes />
+  </AppProvider>
 );
 
 export default App;
